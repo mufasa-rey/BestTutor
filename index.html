@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Tutor | Assignment Help for Students</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src=" https://cdn.tailwindcss.com "></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide @latest"></script>
+
+  <style>
+    :root {
+      --primary: #00B4D8;
+      --accent: #FF5722;
+      --background: #fff;
+      --foreground: #000;
+      --card: #fff;
+      --muted: #f5f5f5;
+      --border: #ddd;
+      --radius: 0.5rem;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--primary);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0, 180, 216, 0.8), rgba(0, 180, 216, 0.8)), url('https://picsum.photos/1600/900 ') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background: var(--background);
+    }
+
+    .section.bg-muted {
+      background: var(--muted);
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .form input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground font-sans">
+  <!-- Sticky Navigation -->
+  <nav>
+    <div class="logo">Best Tutor</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#order">Order</a>
+      <a href="#writers">Writers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Need Help With Assignments?</h1>
+      <p>Essays, Projects, Research Papers & More. Fast, Affordable, Confidential.</p>
+      <a href="https://wa.me/19794002305 " target="_blank">
+        <button class="cta-button">
+          <i data-lucide="MessageCircle" class="mr-2 h-5 w-5"></i>
+          Chat on WhatsApp
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <i data-lucide="FileText" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+        <p><strong>Custom Essay Writing</strong></p>
+      </div>
+      <div class="card">
+        <i data-lucide="Search" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+        <p><strong>Research Papers & Case Studies</strong></p>
+      </div>
+      <div class="card">
+        <i data-lucide="Users" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+        <p><strong>Online Class Assistance</strong></p>
+      </div>
+      <div class="card">
+        <i data-lucide="Edit3" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+        <p><strong>Editing & Proofreading</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+<section id="pricing" class="section bg-muted">
+  <h2 class="text-4xl font-bold text-center text-foreground mb-4">
+    Secure Payment
+  </h2>
+  <p class="text-xl text-center text-muted-foreground mb-16">
+    Choose your package. Pay securely. Submit your assignment.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Pricing Card 1: $25 -->
+    <div class="pricing-card bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+      <div class="p-8 text-center">
+        <h3 class="text-2xl font-bold text-primary mb-2">$25</h3>
+        <p class="text-muted-foreground mb-6">1–3 pages</p>
+        <a href="https://buy.stripe.com/eVq6oHeNZ4Qheu1ekpdUY02 " target="_blank" class="cta-button w-full bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-button inline-block">
+          Pay with Stripe
+        </a>
+      </div>
+    </div>
+
+    <!-- Pricing Card 2: $50 (Most Popular) -->
+    <div class="pricing-card popular bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 relative border-accent border-2">
+      <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+        <span class="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold">
+          Most Popular
+        </span>
+      </div>
+      <div class="p-8 text-center">
+        <h3 class="text-2xl font-bold text-primary mb-2">$50</h3>
+        <p class="text-muted-foreground mb-6">4–7 pages</p>
+        <a href="https://buy.stripe.com/6oUeVd5dpdmN0Db7W1dUY03 " target="_blank" class="cta-button w-full bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-button inline-block">
+          Pay with Stripe
+        </a>
+      </div>
+    </div>
+
+    <!-- Pricing Card 3: $75 -->
+    <div class="pricing-card bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+      <div class="p-8 text-center">
+        <h3 class="text-2xl font-bold text-primary mb-2">$75</h3>
+        <p class="text-muted-foreground mb-6">8–12 pages</p>
+        <a href="https://buy.stripe.com/6oUcN535h96xdpX1xDdUY04 " target="_blank" class="cta-button w-full bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-button inline-block">
+          Pay with Stripe
+        </a>
+      </div>
+    </div>
+
+    <!-- Pricing Card 4: $100 -->
+    <div class="pricing-card bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+      <div class="p-8 text-center">
+        <h3 class="text-2xl font-bold text-primary mb-2">$100</h3>
+        <p class="text-muted-foreground mb-6">13+ pages</p>
+        <a href="https://buy.stripe.com/6oU4gz21d5UlgC91xDdUY05 " target="_blank" class="cta-button w-full bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-button inline-block">
+          Pay with Stripe
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Order Section -->
+  <section id="order" class="section py-20 bg-background">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-foreground mb-4">Place Your Order</h2>
+      <p class="text-xl text-muted-foreground mb-12">After completing payment, submit your assignment via the buttons below.</p>
+      <div class="flex flex-col md:flex-row gap-6 justify-center max-w-2xl mx-auto">
+        <a href="mailto:tutorwork03@gmail.com?subject=Assignment Submission" class="flex-1">
+          <button class="w-full cta-button py-6 text-lg inline-flex items-center justify-center gap-3">
+            <i data-lucide="Mail" class="h-6 w-6"></i>
+            Email Assignment
+          </button>
+        </a>
+        <a href="https://wa.me/19794002305 " target="_blank" class="flex-1">
+          <button class="w-full cta-button py-6 text-lg inline-flex items-center justify-center gap-3">
+            <i data-lucide="MessageCircle" class="h-6 w-6"></i>
+            WhatsApp Assignment
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writers Section -->
+  <section id="writers" class="section py-20 bg-muted">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-foreground mb-4">Join as a Writer</h2>
+      <p class="text-xl text-center text-muted-foreground mb-16">Flexible hours. Competitive pay. Hundreds of monthly orders.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div class="card">
+          <i data-lucide="FileText" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Dozens of New Orders Daily</span>
+        </div>
+        <div class="card">
+          <i data-lucide="MessageCircle" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Talk Directly With Clients</span>
+        </div>
+        <div class="card">
+          <i data-lucide="DollarSign" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Set Your Own Rates</span>
+        </div>
+        <div class="card">
+          <i data-lucide="Clock" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Work When You Want</span>
+        </div>
+        <div class="card">
+          <i data-lucide="Star" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Rate Clients</span>
+        </div>
+        <div class="card">
+          <i data-lucide="Calendar" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+          <span class="font-medium">Bi-monthly Payments</span>
+        </div>
+      </div>
+
+      <!-- Earning Tiers -->
+      <h3 class="text-2xl font-bold text-center text-foreground mb-8">Earning Potential</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div class="bg-blue-100 text-blue-800 rounded-lg p-6 text-center">
+          <h4 class="font-bold text-lg mb-2">Beginner</h4>
+          <p class="font-semibold">$150–$500/month</p>
+        </div>
+        <div class="bg-green-100 text-green-800 rounded-lg p-6 text-center">
+          <h4 class="font-bold text-lg mb-2">Intermediate</h4>
+          <p class="font-semibold">$600–$900/month</p>
+        </div>
+        <div class="bg-yellow-100 text-yellow-800 rounded-lg p-6 text-center">
+          <h4 class="font-bold text-lg mb-2">Advanced</h4>
+          <p class="font-semibold">$1000–$1400/month</p>
+        </div>
+        <div class="bg-purple-100 text-purple-800 rounded-lg p-6 text-center">
+          <h4 class="font-bold text-lg mb-2">Expert</h4>
+          <p class="font-semibold">$1500–$2000/month</p>
+        </div>
+      </div>
+
+      <!-- Application Steps -->
+      <h3 class="text-2xl font-bold text-center text-foreground mb-8">How to Apply</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+        <div class="card">
+          <i data-lucide="FileText" class="h-10 w-10 text-primary mx-auto mb-3"></i>
+          <span class="text-sm font-medium">Submit Info</span>
+        </div>
+        <div class="card">
+          <i data-lucide="Pencil" class="h-10 w-10 text-primary mx-auto mb-3"></i>
+          <span class="text-sm font-medium">Pass a Short Test</span>
+        </div>
+        <div class="card">
+          <i data-lucide="Edit3" class="h-10 w-10 text-primary mx-auto mb-3"></i>
+          <span class="text-sm font-medium">Write Intro Essay</span>
+        </div>
+        <div class="card">
+          <i data-lucide="CreditCard" class="h-10 w-10 text-primary mx-auto mb-3"></i>
+          <span class="text-sm font-medium">Upload ID + Diploma</span>
+        </div>
+        <div class="card">
+          <i data-lucide="DollarSign" class="h-10 w-10 text-primary mx-auto mb-3"></i>
+          <span class="text-sm font-medium">Select Payment Method</span>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="mailto:tutorwork03@gmail.com?subject=Writer Application" target="_blank">
+          <button class="cta-button bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg inline-flex items-center gap-3">
+            <i data-lucide="Target" class="h-6 w-6"></i>
+            Apply Now
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section bg-background">
+  <h2 class="text-4xl font-bold text-center text-foreground mb-16">Contact & Support</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <!-- Email -->
+    <div class="card bg-white p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
+      <i data-lucide="Mail" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+      <h3 class="font-semibold mb-2">Email</h3>
+      <a href="mailto:tutorwork03@gmail.com" target="_blank" rel="noopener noreferrer" class="block">
+        <button class="w-full flex items-center justify-center gap-2 bg-muted hover:bg-primary text-primary hover:text-white px-4 py-2 rounded-md transition-colors duration-300">
+          <img src="email.png" alt="Email Icon" class="h-5 w-5" />
+          <span>Email Us</span>
+        </button>
+      </a>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="card bg-white p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
+      <i data-lucide="MessageCircle" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+      <h3 class="font-semibold mb-2">WhatsApp</h3>
+      <a href="https://wa.me/19794002305 " target="_blank" rel="noopener noreferrer" class="block">
+        <button class="w-full flex items-center justify-center gap-2 bg-muted hover:bg-green-500 text-primary hover:text-white px-4 py-2 rounded-md transition-colors duration-300">
+          <img src="whatsapp.png" alt="WhatsApp Icon" class="h-5 w-5" />
+          <span>Chat on WhatsApp</span>
+        </button>
+      </a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="card bg-white p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
+      <i data-lucide="Instagram" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+      <h3 class="font-semibold mb-2">Instagram</h3>
+      <a href="https://instagram.com/best..tutor " target="_blank" rel="noopener noreferrer" class="block">
+        <button class="w-full flex items-center justify-center gap-2 bg-muted hover:bg-purple-500 text-primary hover:text-white px-4 py-2 rounded-md transition-colors duration-300">
+          <img src="instagram.png" alt="Instagram Icon" class="h-5 w-5" />
+          <span>Follow Us</span>
+        </button>
+      </a>
+    </div>
+
+    <!-- Availability -->
+    <div class="card bg-white p-6 rounded-lg shadow-md text-center transition-transform hover:scale-105">
+      <i data-lucide="Clock" class="h-12 w-12 text-primary mx-auto mb-4"></i>
+      <h3 class="font-semibold mb-2">Availability</h3>
+      <p class="text-muted-foreground">Available 24/7 for urgent help</p>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="max-w-md mx-auto mt-16">
+    <h3 class="text-2xl font-bold text-center text-foreground mb-6">Stay Updated</h3>
+    <form onsubmit="handleNewsletter(event)" class="flex gap-4">
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email to receive offers & updates"
+        required
+        class="flex-1 px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+      />
+      <button type="submit" class="cta-button bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+
+   
+  <!-- Footer -->
+  <footer class="bg-primary text-primary-foreground py-12">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-8">
+        <div class="flex flex-wrap justify-center gap-8 mb-6">
+          <a href="#services" class="hover:text-accent transition-colors">Services</a>
+          <span class="text-muted-foreground">|</span>
+          <a href="#order" class="hover:text-accent transition-colors">Order</a>
+          <span class="text-muted-foreground">|</span>
+          <a href="#writers" class="hover:text-accent transition-colors">Become a Writer</a>
+          <span class="text-muted-foreground">|</span>
+          <a href="#contact" class="hover:text-accent transition-colors">Support</a>
+        </div>
+        <p class="text-muted-foreground">© 2025 Best Tutor. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Newsletter Script -->
+  <script>
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      if (email) {
+        alert('Subscribed!');
+        document.getElementById('email').value = '';
+      }
+    }
+  </script>
+</body>
+</html>
